@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Chronos</string>
+    <string name="add_lead">Add Lead</string>
+    <string name="manage_leads">Manage Leads</string>
+    <string name="manage_agents">Manage Agents</string>
+    <string name="send_report">Send Report</string>
+    <string name="help">Help</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+</resources>

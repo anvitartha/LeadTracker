@@ -1,0 +1,96 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background"
+    >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="35dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Add Agent"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <EditText
+                android:id="@+id/add_agent_mobile_editText"
+                android:hint="Enter or select agent number"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/layerlist"
+                android:layout_margin="5dp"
+                android:inputType="number"
+                >
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/add_agent_pick_mobile_button"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_addcontact">
+            </ImageButton>
+
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            >
+
+            <EditText
+                android:id="@+id/add_agent_pincode_edittext"
+                android:hint="Enter agent pincode"
+                android:layout_height="fill_parent"
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/layerlist"
+                android:layout_margin="5dp"
+                android:inputType="number"/>
+
+            <ImageButton
+                android:id="@+id/add_agent_add_button"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"
+                android:src="@drawable/ic_plus">
+            </ImageButton>
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/agentListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layerlist"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:dividerHeight="8.0sp"
+        android:divider="@drawable/background"
+        >
+    </ListView>
+
+</LinearLayout>
